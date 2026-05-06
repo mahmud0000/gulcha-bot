@@ -109,7 +109,7 @@ status_map = {
 "delivering": " Yetkazilmoqda",
 "delivered": " Yetkazildi",
 "cancelled": " Bekor"
-Karta"
+"Karta"
 }
 status = status_map.get(order.get("status", "new"), " lat = user.get("lat")
 ")lon = user.get("lon")
