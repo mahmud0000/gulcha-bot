@@ -281,7 +281,13 @@ for n in cart
 buttons.append([InlineKeyboardButton(
 f" Buyurtma berish — {total:,} so'm", callback_data="checkout"
 )])
-buttons.append([InlineKeyboardButton(" Savatchani tozalash", callback_data="clear_c
+buttons.append([
+    InlineKeyboardButton(
+        " Savatchani tozalash",
+        callback_data="clear_cart"
+    )
+])
+
 cart_lines = ""
 if cart:
 lines = []
