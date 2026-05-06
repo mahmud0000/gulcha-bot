@@ -12,7 +12,7 @@ Application, CommandHandler, MessageHandler, CallbackQueryHandler,
 ConversationHandler, filters, ContextTypes
 )
 # ==================== SOZLAMALAR ====================
-TOKEN = os.getenv("8766748683:AAFJ6cKF56fTORAISb6uQzuojpHRTxRJVGI", "")
+TOKEN = os.getenv("8619295805:AAHAR0TuU-wzDmgZS2kqDlnaHUr1AYxfNoQ", "")
 ADMIN_ID = int(os.getenv("ADMIN_ID", "5594795335"))
 CARD_NUMBER = os.getenv("CARD_NUMBER", "5614 6821 2328 4780")
 DATA_FILE = "data.json"
