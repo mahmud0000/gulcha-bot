@@ -101,7 +101,9 @@ items_text = "\n".join([
 f" • {i['name']} x{i['qty']} — {i['qty'] * i['price']:,} so'm"
 for i in order["items"]
 ])
-payment = " Naqd" if order["payment"] == "cash" else " status_map = {
+payment = " Naqd" if order["payment"] == "cash" else ""
+
+status_map = {
 "new": " Yangi",
 "cooking": " Tayyorlanmoqda",
 "delivering": " Yetkazilmoqda",
