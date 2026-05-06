@@ -111,8 +111,10 @@ status_map = {
 "cancelled": " Bekor"
 "Karta"
 }
-status = status_map.get(order.get("status", "new"), " lat = user.get("lat")
-")lon = user.get("lon")
+status = status_map.get(order.get("status", "new"), "")
+
+lat = user.get("lat")
+lon = user.get("lon")
 location_text = f" [{user.get('address', 'Manzil')}]({maps_link(lat, lon)})" if lat and
 return (
 f" *Buyurtma #{order['id']}*\n\n"
