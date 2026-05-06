@@ -255,8 +255,11 @@ if user_id not in users:
 await update.message.reply_text("Avval /start bosing va ro'yxatdan o'ting.")
 return ConversationHandler.END
 if not menu:
-await update.message.reply_text(" return ConversationHandler.END
-Bugungi menyu hali tayyor emas.")
+await update.message.reply_text(
+    "Bugungi menyu hali tayyor emas."
+)
+
+return ConversationHandler.END
 context.user_data["cart"] = {}
 return await show_menu(update, context)
 async def show_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
