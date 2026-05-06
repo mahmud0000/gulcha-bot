@@ -363,7 +363,12 @@ if idx >= len(UPSELL_ITEMS):
 return await payment_choice(update, context)
 item = UPSELL_ITEMS[idx]
 buttons = [
-[InlineKeyboardButton(f" Ha, qo'shaman ({item['price']:,} so'm)", callback_data="up
+[
+    InlineKeyboardButton(
+        f" Ha, qo'shaman ({item['price']:,} so'm)",
+        callback_data="upsell_yes"
+    )
+]
 [InlineKeyboardButton(" Yo'q, kerak emas", callback_data="upsell_no")]
 ]
 text = f" *Qo'shimcha taklif:*\n\n{item['name']} — {item['price']:,} so'm\n\nQo'shasizm
